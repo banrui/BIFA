@@ -26,10 +26,29 @@
   </tr>
   <% @user_array.each_with_index do |i, index| %>
   <tr>
+    <% if @user_array[index]["name"] == "@kazudance_11" %>
+    <td style="background-color: #87CEEB;"><h4><%= index + 1 %>位</h4></td>
+    <% else %>
     <td><h4><%= index + 1 %>位</h4></td>
+    <% end %>
+    
+     <% if @user_array[index]["name"] == "@kazudance_11" %>
+    <td style="background-color: #87CEEB;"><h4><%= image_tag "#{@user_array[index][:photo]}", :width => "50",:height => "50"%>　<a><%= @user_array[index]["name"] %></a></h4></td>
+    <% else %>
     <td><h4><%= image_tag "#{@user_array[index][:photo]}", :width => "50",:height => "50"%>　<a><%= @user_array[index]["name"] %></a></h4></td>
+    <% end %>
+     <% if @user_array[index]["name"] == "@kazudance_11" %>
+        <td style="background-color: #87CEEB;"><h4><%= @user_array[index]["point"] %> pt</h4></td>
+    <% else %>
     <td><h4><%= @user_array[index]["point"] %> pt</h4></td>
+    <% end %>
+    
+    <% if @user_array[index]["name"] == "@kazudance_11" %>
+        <td style="background-color: #87CEEB;"><%= image_tag "#{@user_array[index][:country]}", :width => "50"%></td>
+    <% else %>
     <td><%= image_tag "#{@user_array[index][:country]}", :width => "50"%></td>
+    <% end %>
+    
   </tr>
   <% end %>
 </table>

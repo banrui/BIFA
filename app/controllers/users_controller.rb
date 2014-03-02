@@ -12,7 +12,7 @@ class UsersController < ApplicationController
    #data
     @inEntry =[
    {"name"=>"@kazudance_11", "point"=>300, :country =>"1.png", :photo =>"1_2.jpg"},
-   {"name"=>"@inagarchi_gazzetta", "point"=>200, :country =>"2.jpeg", :photo =>"1_1.jpg"},
+   {"name"=>"@inagarchi_gazzetta", "point"=>200, :country =>"2.jpeg", :photo =>"1_12.jpg"},
    {"name"=>"@asahi_soccer1", "point"=>100, :country =>"1.png", :photo =>"1_3.png"},
    {"name"=>"@Inagaki7K", "point"=>150, :country =>"1.png", :photo =>"1_4.jpg"},
    {"name"=>"@masa_ariyoshi", "point"=>200, :country =>"1.png", :photo =>"1_5.jpeg"},
@@ -22,15 +22,15 @@ class UsersController < ApplicationController
    {"name"=>"@banrui", "point"=>600, :country =>"1.png", :photo =>"1_9.JPG"},
    {"name"=>"@Take_OKD", "point"=>799, :country =>"1.png", :photo =>"1_10.jpeg"},
    {"name"=>"@asahi", "point"=>300, :country =>"1.png", :photo =>"1_11.png"},
-   {"name"=>"@Sergio_Echizen_", "point"=>200, :country =>"1.png", :photo =>"1_12"},
-   {"name"=>"name13", "point"=>100, :country =>"1.png", :photo =>"1_13"},
-   {"name"=>"name14", "point"=>150, :country =>"1.png", :photo =>"1_14"},
-   {"name"=>"name15", "point"=>200, :country =>"1.png", :photo =>"1_15"},
-   {"name"=>"name16", "point"=>300, :country =>"1.png", :photo =>"1_16"},
-   {"name"=>"name17", "point"=>400, :country =>"1.png", :photo =>"1_17"},
-   {"name"=>"name18", "point"=>450, :country =>"1.png", :photo =>"1_18"},
-   {"name"=>"name19", "point"=>600, :country =>"1.png", :photo =>"1_19"},
-   {"name"=>"name20", "point"=>799, :country =>"1.png", :photo =>"1_20"}
+   {"name"=>"@Sergio_Echizen_", "point"=>200, :country =>"1.png", :photo =>"1_20.jpg"},
+   {"name"=>"@Guti_SER", "point"=>100, :country =>"4.jpeg", :photo =>"1_13.jpg"},
+   {"name"=>"@ClaroRonaldo", "point"=>150, :country =>"5.jpeg", :photo =>"1_14.jpg"},
+   {"name"=>"@_FelipeMelo_", "point"=>200, :country =>"5.jpeg", :photo =>"1_15.jpg"},
+   {"name"=>"@luis_fabuloso", "point"=>300, :country =>"5.jpeg", :photo =>"1_16.JPG"},
+   {"name"=>"@anelkaofficiel", "point"=>400, :country =>"1.png", :photo =>"1_17.jpg"},
+   {"name"=>"@jksheva7", "point"=>450, :country =>"7.svg", :photo =>"1_18.jpg"},
+   {"name"=>"@iomatrix23", "point"=>600, :country =>"2.jpeg", :photo =>"1_19.jpg"},
+   {"name"=>"@themichaelowen", "point"=>799, :country =>"6.jpeg", :photo =>"1_20.jpg"}
    ]
    outEntryList = resortEntryCtr(@inEntry)
    
@@ -43,26 +43,28 @@ class UsersController < ApplicationController
    
    if cookies[:count].to_i%3 == 0
      @user_array =[
-       {"name"=>"@banrui", "point"=>965, :country =>"1.png", :photo =>"1_9.JPG"},
-       {"name"=>"@kazudance_11", "point"=>823, :country =>"1.png", :photo =>"1_2.jpg"},
-       {"name"=>"@asahi_soccer1", "point"=>783, :country =>"1.png", :photo =>"1_3.png"},
-       {"name"=>"@Inagaki7K", "point"=>776, :country =>"1.png", :photo =>"1_4.jpg"},
-       {"name"=>"@masa_ariyoshi", "point"=>773, :country =>"1.png", :photo =>"1_5.jpeg"},
-       {"name"=>"@michiamochu", "point"=>769, :country =>"1.png", :photo =>"1_6.jpeg"},
-       {"name"=>"@inagarchi_gazzetta", "point"=>755, :country =>"2.jpeg", :photo =>"1_1.jpg"},
-       {"name"=>"@nezumi32", "point"=>736, :country =>"1.png", :photo =>"1_7.jpeg"},
-       {"name"=>"@hira_ryuu", "point"=>625, :country =>"1.png", :photo =>"1_8.jpg"},     
-       {"name"=>"@Take_OKD", "point"=>620, :country =>"1.png", :photo =>"1_10.jpeg"},
-       {"name"=>"@asahi", "point"=>588, :country =>"1.png", :photo =>"1_11.png"},
-       {"name"=>"@Sergio_Echizen_", "point"=>557, :country =>"1.png", :photo =>"1_12"},
-       {"name"=>"name13", "point"=>381, :country =>"1.png", :photo =>"1_13"},
-       {"name"=>"name14", "point"=>371, :country =>"1.png", :photo =>"1_14"},
-       {"name"=>"name15", "point"=>367, :country =>"1.png", :photo =>"1_15"},
-       {"name"=>"name16", "point"=>200, :country =>"1.png", :photo =>"1_16"},
-       {"name"=>"name17", "point"=>146, :country =>"1.png", :photo =>"1_17"},
-       {"name"=>"name18", "point"=>96, :country =>"1.png", :photo =>"1_18"},
-       {"name"=>"name19", "point"=>47, :country =>"1.png", :photo =>"1_19"},
-       {"name"=>"name20", "point"=>45, :country =>"1.png", :photo =>"1_20"}
+       {"name"=>"@banrui", "point"=>962, :country =>"1.png", :photo =>"1_9.JPG"},
+       {"name"=>"@kazudance_11", "point"=>910, :country =>"1.png", :photo =>"1_2.jpg"},
+       {"name"=>"@inagarchi_gazzetta", "point"=>831, :country =>"2.jpeg", :photo =>"1_12.jpg"},
+       {"name"=>"@Sergio_Echizen_", "point"=>822, :country =>"1.png", :photo =>"1_13.jpg"},
+       {"name"=>"@asahi", "point"=>798, :country =>"1.png", :photo =>"1_11.png"},
+       {"name"=>"@jksheva7", "point"=>761, :country =>"7.svg", :photo =>"1_18.jpg"},
+       {"name"=>"@iomatrix23", "point"=>565, :country =>"2.jpeg", :photo =>"1_19.jpg"},
+       {"name"=>"@asahi_soccer1", "point"=>501, :country =>"1.png", :photo =>"1_3.png"},
+       {"name"=>"@themichaelowen", "point"=>455, :country =>"6.jpeg", :photo =>"1_20.jpg"},
+       {"name"=>"@Inagaki7K", "point"=>433, :country =>"1.png", :photo =>"1_4.jpg"},
+       {"name"=>"@Guti_SER", "point"=>376, :country =>"4.jpeg", :photo =>"1_13.jpg"},
+       {"name"=>"@ClaroRonaldo", "point"=>343, :country =>"5.jpeg", :photo =>"1_14.jpg"},
+       {"name"=>"@_FelipeMelo_", "point"=>201, :country =>"5.jpeg", :photo =>"1_15.jpg"},
+       {"name"=>"@luis_fabuloso", "point"=>162, :country =>"5.jpeg", :photo =>"1_16.JPG"},
+       {"name"=>"@anelkaofficiel", "point"=>159, :country =>"1.png", :photo =>"1_17.jpg"},
+       {"name"=>"@masa_ariyoshi", "point"=>149, :country =>"1.png", :photo =>"1_5.jpeg"},
+       {"name"=>"@nezumi32", "point"=>129, :country =>"1.png", :photo =>"1_7.jpeg"},
+       {"name"=>"@hira_ryuu", "point"=>109, :country =>"1.png", :photo =>"1_8.jpg"},
+       {"name"=>"@Take_OKD", "point"=>64, :country =>"1.png", :photo =>"1_10.jpeg"},
+       {"name"=>"@michiamochu", "point"=>23, :country =>"1.png", :photo =>"1_6.jpeg"},
+
+
     ]
   else
     @user_array = outEntryList
