@@ -1,0 +1,35 @@
+<h2>世界ランキング（参加者1038人）</h2>
+  <% @user_array.each_with_index do |i, index| %>
+    <% if @user_array[index]["name"] == "@kazudance_11" %>
+      <h4><%= image_tag "#{@user_array[index][:photo]}", :width => "50",:height => "50"%>　@kazudance_11　：　現在<%= index + 1 %>位　
+        <div class="btn-group">
+  <button type="button" class="btn btn-default">　<a href="/football_data">データページ</a>　</button>
+  <button type="button" class="btn btn-default">　<a href="http://aquabit.org/gittest/wbgds/">投票ページ</a>　</button>
+  <button type="button" class="btn btn-default">　<a href="http://aquabit.org/gittest/wbgds/">試合一覧ページ</a>　</button>
+</div>
+        </h4>
+    <% end %>
+  <% end %>
+
+
+  <ul class="pager">
+  <li>
+    <a href="#">21位〜40位</a>　　<a href="#">41位〜60位</a>　　<a href="#">61位〜80位</a>　　<a href="#">81位〜100位</a>
+  </li>
+</ul>
+<table class="table table-striped" align=center>
+  <tr>
+    <th>ランク</th>
+    <th>ユーザ</th>
+    <th>獲得ポイント</th>
+    <th>国籍</th>
+  </tr>
+  <% @user_array.each_with_index do |i, index| %>
+  <tr>
+    <td><h4><%= index + 1 %>位</h4></td>
+    <td><h4><%= image_tag "#{@user_array[index][:photo]}", :width => "50",:height => "50"%>　<a><%= @user_array[index]["name"] %></a></h4></td>
+    <td><h4><%= @user_array[index]["point"] %> pt</h4></td>
+    <td><%= image_tag "#{@user_array[index][:country]}", :width => "50"%></td>
+  </tr>
+  <% end %>
+</table>
